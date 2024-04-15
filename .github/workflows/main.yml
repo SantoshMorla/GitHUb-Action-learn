@@ -8,11 +8,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          path: main
 
-      - name: run one line code
-        run: echo "Hello-world">>hello.txt
+      - name: Checkout tools repo
+        uses: actions/checkout@v4
+        with:
+          repository: .
+          path: hii.txt
         
       
     
