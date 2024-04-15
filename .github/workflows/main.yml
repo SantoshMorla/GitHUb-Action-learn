@@ -13,6 +13,13 @@ jobs:
         with:
           path: main
 
+      - name: create file
+        run : |
+            mkdir santosh
+            cd santosh
+            touch file.py
+            
+
       - name: Checkout tools repo
         uses: actions/checkout@v4
         with:
