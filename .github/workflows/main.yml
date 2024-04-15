@@ -1,0 +1,19 @@
+name: "Hello-World"
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+      - uses: action/checkout@v4
+
+      - name: run one line code
+        run: echo "Hello-world">>hello.txt
+        
+      
+    
+    
