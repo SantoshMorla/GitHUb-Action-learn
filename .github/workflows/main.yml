@@ -18,6 +18,7 @@ jobs:
             mkdir santosh
             cd santosh
             touch file.py
+            ls -l
             
 
       - name: Checkout tools repo
